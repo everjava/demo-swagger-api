@@ -1,8 +1,8 @@
 # demo-swagger-api
 
--configHelp
+- configHelp options
 
-sortParamsByRequiredFlag
+	sortParamsByRequiredFlag
 	    Sort method arguments to place required parameters before optional parameters. (Default: true)
 
 	ensureUniqueParams
