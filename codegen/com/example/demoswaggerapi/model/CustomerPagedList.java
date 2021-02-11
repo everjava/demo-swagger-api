@@ -16,7 +16,7 @@ import javax.validation.constraints.*;
  * CustomerPagedList
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-10T10:28:56.282937-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-11T11:10:02.729335600-03:00[America/Sao_Paulo]")
 
 
 public class CustomerPagedList extends PagedResponse  {

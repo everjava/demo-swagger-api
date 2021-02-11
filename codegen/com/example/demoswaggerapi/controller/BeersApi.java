@@ -41,7 +41,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-10T10:28:56.282937-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-11T11:10:02.729335600-03:00[America/Sao_Paulo]")
 public interface BeersApi {
 
     Logger log = LoggerFactory.getLogger(BeersApi.class);
@@ -59,7 +59,8 @@ public interface BeersApi {
     }
 
     @Operation(summary = "Delete Beer by Id", description = "Delete a beer resource by its ID value.", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Beers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Beers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "200", description = "Beer Resource Deleted"),
         
@@ -76,7 +77,8 @@ public interface BeersApi {
 
 
     @Operation(summary = "Get Beer by ID", description = "Get a single beer by its ID value.", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Beers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Beers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "200", description = "Found Beer by Id", content = @Content(schema = @Schema(implementation = Beer.class))),
         
@@ -102,7 +104,8 @@ public interface BeersApi {
 
 
     @Operation(summary = "List Beers", description = "List all beers in system.", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Beers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Beers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "200", description = "List of Beers", content = @Content(schema = @Schema(implementation = BeerPagedList.class))),
         
@@ -128,7 +131,8 @@ public interface BeersApi {
 
 
     @Operation(summary = "Update Beer by ID", description = "Update a beer by its ID value.", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Beers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Beers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "204", description = "Beer Updated"),
         
@@ -150,7 +154,8 @@ public interface BeersApi {
 
 
     @Operation(summary = "New Beer", description = "Create a new Beer Object", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Beers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Beers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "201", description = "Beer Created"),
         

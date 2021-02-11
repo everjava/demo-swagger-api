@@ -40,7 +40,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-10T10:28:56.282937-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-11T11:10:02.729335600-03:00[America/Sao_Paulo]")
 public interface OrderServiceApi {
 
     Logger log = LoggerFactory.getLogger(OrderServiceApi.class);
@@ -58,7 +58,8 @@ public interface OrderServiceApi {
     }
 
     @Operation(summary = "", description = "Place Order", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Order Service" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Order Service" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "201", description = "Order Created"),
         

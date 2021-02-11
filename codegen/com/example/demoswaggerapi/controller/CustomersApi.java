@@ -41,7 +41,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-10T10:28:56.282937-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-11T11:10:02.729335600-03:00[America/Sao_Paulo]")
 public interface CustomersApi {
 
     Logger log = LoggerFactory.getLogger(CustomersApi.class);
@@ -59,7 +59,8 @@ public interface CustomersApi {
     }
 
     @Operation(summary = "Delete Customer By ID", description = "Delete a customer by its Id value.", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Customers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Customers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "200", description = "Customer Delete"),
         
@@ -76,7 +77,8 @@ public interface CustomersApi {
 
 
     @Operation(summary = "Get Customer By ID", description = "Get a single **Customer** by its Id value.", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Customers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Customers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "200", description = "Found Customer", content = @Content(schema = @Schema(implementation = Customer.class))),
         
@@ -126,7 +128,8 @@ public interface CustomersApi {
 
 
     @Operation(summary = "Update Customer", description = "Update customer by id.", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Customers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Customers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "204", description = "Customer Updated"),
         
@@ -146,7 +149,8 @@ public interface CustomersApi {
 
 
     @Operation(summary = "New Customer", description = "Create a new customer", security = {
-        @SecurityRequirement(name = "BasicAuth")    }, tags={ "Customers" })
+        @SecurityRequirement(name = "BasicAuth"),
+@SecurityRequirement(name = "JwtAuthToken")    }, tags={ "Customers" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "201", description = "Customer Created"),
         

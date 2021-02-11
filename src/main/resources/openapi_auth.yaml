@@ -12,20 +12,21 @@ info:
     url: https://www.apache.org/licenses/LICENSE-2.0.html
   version: "1.0"
 servers:
-  - url: https://dev.example.com
+  - url: http://localhost:8080
     description: Development Server
   - url: https://qa.example.com
     description: QA Server
-  - url: https://prod.example.com
-    description: Production Server
 security:
   - BasicAuth: []
+  - JwtAuthToken: []
 paths:
   /v1/customers:
     get:
       tags:
         - Customers
       summary: List Customers
+      security:
+        - BasicAuth: []
       description: Get a list of customers in the system
       operationId: listCustomersV1
       parameters:
@@ -606,3 +607,7 @@ components:
     BasicAuth:
       type: http
       scheme: basic
+    JwtAuthToken:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

@@ -162,6 +162,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
+                            <configHelp>true</configHelp>
                             <inputSpec>${project.basedir}/src/main/resources/openapi_auth.yaml</inputSpec>
                             <language>spring</language>
                             <apiPackage>com.example.demoswaggerapi.controller</apiPackage>
