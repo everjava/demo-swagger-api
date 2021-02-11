@@ -154,13 +154,13 @@
 	    Throws Exception in operation methods (Default: false)
 
 	- library  
-	    library template (sub-template) to use (Default: spring-boot)
-	        spring-boot - Spring-boot Server application using the SpringFox integration.
-	        spring-mvc - Spring-MVC Server application using the SpringFox integration.
-	        spring-cloud - Spring-Cloud-Feign client with Spring-Boot auto-configured settings.
+	    library template (sub-template) to use (Default: spring-boot)  
+	        spring-boot - Spring-boot Server application using the SpringFox integration.  
+	        spring-mvc - Spring-MVC Server application using the SpringFox integration.  
+	        spring-cloud - Spring-Cloud-Feign client with Spring-Boot auto-configured settings.  
 
 	- springBootVersion  
-	    Spring boot version
-	        2.1.7.RELEASE - 2.1.7.RELEASE
-	        1.5.22.RELEASE - 1.5.22.RELEASE
+	    Spring boot version  
+	        2.1.7.RELEASE - 2.1.7.RELEASE  
+	        1.5.22.RELEASE - 1.5.22.RELEASE  
 
